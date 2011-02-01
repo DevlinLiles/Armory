@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Armory", "Armory.csproj", "{BC9F19FD-6383-4632-90F3-9A3340755182}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Armory.Tests", "..\Armory.Tests\Armory.Tests.csproj", "{978F201B-5C5D-48BB-AA1B-B0C4EEDFB36F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{17CE3D50-39FB-4506-9AA4-2FF7023A9196}"
+	ProjectSection(SolutionItems) = preProject
+		Armory.vsmdi = Armory.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Armory.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -13,6 +25,10 @@ Global
 		{BC9F19FD-6383-4632-90F3-9A3340755182}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC9F19FD-6383-4632-90F3-9A3340755182}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC9F19FD-6383-4632-90F3-9A3340755182}.Release|Any CPU.Build.0 = Release|Any CPU
+		{978F201B-5C5D-48BB-AA1B-B0C4EEDFB36F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978F201B-5C5D-48BB-AA1B-B0C4EEDFB36F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978F201B-5C5D-48BB-AA1B-B0C4EEDFB36F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978F201B-5C5D-48BB-AA1B-B0C4EEDFB36F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
