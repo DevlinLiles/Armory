@@ -32,8 +32,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
@@ -48,10 +51,29 @@
     <Compile Include="Facades\IConsoleFacade.cs" />
     <Compile Include="Facades\IEnvironmentFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Implementations\EntityFrameworkRepository.cs" />
+    <Compile Include="Security\Entities\Right.cs" />
+    <Compile Include="Security\Interfaces\IAuthorizationService.cs" />
+    <Compile Include="Security\Interfaces\IRightsProvider.cs" />
+    <Compile Include="Repository\Interfaces\IRepository.cs" />
+    <Compile Include="Security\Providers\EntityFrameworkMembershipProvider.cs" />
+    <Compile Include="Security\Providers\EntityFrameworkRoleProvider.cs" />
+    <Compile Include="Security\Providers\RightsProvider.cs" />
+    <Compile Include="Validation\Interfaces\IDomainObject.cs" />
+    <Compile Include="Validation\Interfaces\IRule.cs" />
+    <Compile Include="Validation\Interfaces\IValidationRule.cs" />
+    <Compile Include="Validation\Interfaces\IValidationRuleFactory.cs" />
+    <Compile Include="Validation\Interfaces\IValidationRuleSet.cs" />
+    <Compile Include="Validation\Objects\ValidatableBase.cs" />
+    <Compile Include="Validation\Objects\ValidationRule.cs" />
+    <Compile Include="Validation\Objects\ValidationRuleSet.cs" />
     <Compile Include="Web\GravatarDefaults.cs" />
     <Compile Include="Web\Gravatar.cs" />
     <Compile Include="Web\GravatarRating.cs" />
     <Compile Include="Web\HtmlHelperExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Security\Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
